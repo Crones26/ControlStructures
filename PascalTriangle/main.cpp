@@ -4,17 +4,19 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-#define WHILE_PASKAL
+#define PASKAL
 
 const int width = 8;
 void main()
 {
 	setlocale(LC_ALL, "");
+
+#ifdef PASKAL
 	int h;
 	cout << "¬ведите высоту треугольника: "; cin >> h;
 	for (int i = 0; i < h; i++)
 	{
-		cout.width(width/2);
+		cout.width(width / 2);
 		cout << "";
 	}
 	cout << left;
@@ -31,7 +33,7 @@ void main()
 		}
 		cout.width(width);
 		cout << 1;
-		for (int m = 1 ;m <= n; m++)
+		for (int m = 1; m <= n; m++)
 		{
 			mf *= m;
 			int nmf = 1;
@@ -41,6 +43,7 @@ void main()
 		}
 		cout << endl;
 	}
+#endif // PASKAL
 
 
 }
