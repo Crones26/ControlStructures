@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -11,8 +11,8 @@ using std::endl;
 #define VERTICAL_LINE       (char)179 
 #define WHITE_BOX			"\xDB\xDB"	//(char)219 <<(char)219
 #define BLACK_BOX			"\x20\x20"	//' ' << ' '
-//Escape-последовательность \xCC позволяет в состав строковой константы включить символ по ASCII-коду
-// где CC - это шеснадцетеричный ASCCI-код символа
+//Escape-РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚СЊ \xCC РїРѕР·РІРѕР»СЏРµС‚ РІ СЃРѕСЃС‚Р°РІ СЃС‚СЂРѕРєРѕРІРѕР№ РєРѕРЅСЃС‚Р°РЅС‚С‹ РІРєР»СЋС‡РёС‚СЊ СЃРёРјРІРѕР» РїРѕ ASCII-РєРѕРґСѓ
+// РіРґРµ CC - СЌС‚Рѕ С€РµСЃРЅР°РґС†РµС‚РµСЂРёС‡РЅС‹Р№ ASCCI-РєРѕРґ СЃРёРјРІРѕР»Р°
 void main()
 {
 	for (int i = 176; i < 224; i++)
@@ -24,8 +24,8 @@ void main()
 	cout << endl;
 	setlocale(LC_ALL, "");
 	int n;
-	cout << "Введите размер доски "; cin >> n; n++;
-	setlocale(LC_ALL, "C"); // Включает кодировку по умолчанию
+	cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РґРѕСЃРєРё "; cin >> n; n++;
+	setlocale(LC_ALL, "C"); // Р’РєР»СЋС‡Р°РµС‚ РєРѕРґРёСЂРѕРІРєСѓ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	for (int i = 0; i <= n; i++)
 	{
 		for (int j = 0; j <= n; j++)
